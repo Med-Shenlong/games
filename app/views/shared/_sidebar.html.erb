@@ -1,0 +1,25 @@
+ <h4 class="list-title"> Type of Games</h4>
+
+  <div class="list-group">
+
+
+ <% Category.all.each do |category| %>
+
+
+<%= link_to category.name, categories_posts_path(slug: category.slug), class: 'list-group-item' %>
+
+
+<% end %>
+
+  </div>
+
+  <h4 class="list-title"> New Comers </h4>
+
+<div class="list-group">
+
+
+<%= render Game.limit(4) %>
+
+
+</div>
+

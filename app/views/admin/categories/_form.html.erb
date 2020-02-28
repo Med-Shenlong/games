@@ -1,0 +1,62 @@
+<%= form_for category, url: [:admin, category], html: {class: 'form-horizontal'} do |f| %>
+
+<% if category.errors.any? %>
+
+<div class="alert alert-danger">
+
+<ul>
+
+<% category.errors.full_messages.each do |message| %>
+<li> <%= message %> </li>
+
+<% end %>
+
+</ul>
+</div>
+<% end %>
+
+
+ <div class="form-group">
+
+  <%= f.label :name, "Name", class: 'col-md-4 control-label' %>
+  <div class="col-md-8">
+
+   <%= f.text_field :name, class: 'form_control'%>
+
+  </div>
+  </div>
+
+
+  <div class="form-group">
+
+  <%= f.label :slug, "URL", class: 'col-md-4 control-label' %>
+  <div class="col-md-8">
+
+   <%= f.text_field :slug, class: 'form_control'%>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="form-group">
+
+
+    <div class="col-md-offset-4 col-md-6">
+      <button type="submit" class="btn btn-ghost">
+        <%= category.new_record? ? 'Add' : 'Update' %>
+      </button>
+
+
+
+
+
+    </div>
+  </div>
+
+<% end %>
+

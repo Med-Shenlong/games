@@ -1,0 +1,23 @@
+<class class="row">
+
+  <div class="col-md-8">
+
+
+<%= yield(:content) %>
+
+ </div>
+
+<div class="cold-md-4">
+
+
+  <div class="list-group">
+
+<a href="<%= posts_path%>" class = "list-group-item<%=  yield(:tab)== 'posts' ? ' active': '' %>">My Favourite Games</a>
+<a href="<%= me_posts_path%>" class = "list-group-item<%=  yield(:tab)== 'me' ? ' active': '' %>">My Posts</a>
+<a href="<%= games_path%>" class = "list-group-item<%=  yield(:tab)== 'games' ? ' active': '' %>">My Games</a>
+<a href="<%= profil_path%>" class = "list-group-item<%= yield(:tab)== 'profil' ? ' active': '' %>">My Profile</a>
+
+
+     </div>
+   </div>
+</div>

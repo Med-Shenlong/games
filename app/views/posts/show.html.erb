@@ -1,0 +1,63 @@
+<div class="page-header">
+
+
+<h1><%= @post.name %></h1>
+
+</div>
+
+
+<div class="text-center">
+
+
+<%= image_tag @post.image_url, width: '100%' %>
+
+
+</div>
+
+<div class="row">
+
+<div class="col-md-8">
+
+  <h2>Description</h2>
+
+   <% if canEdit(@post) %>
+
+<p>
+
+<%= link_to 'Edit', [:edit, @post], class: 'btn btn-gradient' %>
+<%= link_to 'Delete',@post, class: 'btn btn-flat', data: {method: :delete, confirm:'Do you Really Want to Delete your Favorite Game ?'} %>
+
+</p>
+   <% end %>
+
+<p>
+
+<%= @post.content.html_safe %>
+
+</p>
+
+</div>
+
+
+<div class="col-md-4">
+
+ <h2> In This Post</h2>
+
+<ul class="list-group">
+
+<%= render @post.games %>
+
+
+
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+
+
+</div>

@@ -1,0 +1,64 @@
+<% content_for :tab, :me %>
+
+<% content_for :content do %>
+
+
+
+<h1>Manage the Posts</h1>
+
+
+<p class="text-right">
+  <a href="<%= new_post_path %>" class="btn btn-ghost">Add your related posts</a>
+
+</p>
+
+
+
+<table class ="table table_striped">
+  <thead>
+    <tr>
+
+      <th>Image</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= image_tag post.image_url(:thumb)%></td>
+        <td><%= post.name %></td>
+        <td><%= post.content %></td>
+
+
+
+        <td>
+
+
+        <%= link_to "Show", post, class: "btn btn-ghost"%>
+
+</td>
+<td>
+
+        <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-gradient' %>
+
+      </td>
+      <td>
+
+        <%= link_to 'Destroy', post, class: 'btn btn-flat', method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+</td>
+
+      </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<% end %>
+
+<%= render template: 'layouts/profile' %>
+

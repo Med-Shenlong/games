@@ -1,0 +1,59 @@
+<h1>Manage The Games</h1>
+
+
+
+<p class="text-right">
+
+<%= link_to 'Add Your Category', {action: :new}, class: 'btn btn-ghost' %>
+
+</p>
+
+
+<table class="table table-stripe">
+
+<thead>
+
+
+<tr>
+
+<th>Name</th>
+<th>Slug</th>
+<th>Actions</th>
+
+
+</tr>
+
+
+
+</thead>
+<tbody>
+
+
+<% @categories.each do |category| %>
+
+<tr>
+
+
+<td><%= category.name %></td>
+
+<td><%= category.slug %></td>
+
+
+<td>
+
+
+<%= link_to 'Edit', [:edit, :admin, category], class: 'btn btn-gradient' %>
+<%= link_to 'Delete',[:admin, category], class: 'btn btn-flat', data: {method: :delete, confirm:'Do you Really Want to Delete your Favorite Category ?'} %>
+
+
+
+</td>
+
+</tr>
+
+<% end %>
+
+</tbody>
+
+
+</table>

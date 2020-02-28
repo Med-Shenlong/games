@@ -1,0 +1,29 @@
+<% content_for :tab, :posts %>
+
+<% content_for :content do %>
+
+
+
+<h1>Followed Games</h1>
+
+<div class="row">
+
+
+<% @posts.each do |post| %>
+
+<div class="col-md-6">
+
+<%= render post %>
+
+
+</div>
+
+<% end %>
+
+</div>
+
+<% end %>
+
+<%= render template: 'layouts/profile' %>
+
+

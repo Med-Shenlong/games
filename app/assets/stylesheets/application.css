@@ -1,0 +1,305 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+
+/* Optionally, you can include any of the flatpickr themes by adding in their styles, like so: */
+
+*= require flatpickr
+*= require flatpickr/plugins/confirmDate/confirmDate
+*= require flatpickr/themes/dark
+
+*=require_tree
+*=require_self
+
+
+.form-control  {
+      max-width: 79%;
+      color: #171738;
+  border: none;
+  border-radius: 5%;
+  opacity: 0.8;
+    }
+
+#game_category_id, #game_test {
+
+
+  color: black;
+}
+
+.select2-selection__rendered {
+
+  color: black;
+}
+
+
+
+    #game_title, #game_category_id,#game_test {
+
+      width: 60%;
+      line-height: 150%;
+    }
+    .form-control:focus {
+        border-color: #ff80ff;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+
+    }
+
+.list-group-item {
+
+
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.list-group-item-text {
+
+
+  color: #242331;
+}
+
+
+.list-group {
+
+
+ display: flex;
+ flex-direction: column;
+ width: 180px;
+ position: relative;
+ left: 250px;
+
+
+
+
+}
+
+
+
+.list-title {
+
+
+position: relative;
+ left: 300px;
+
+
+
+}
+
+
+
+.navbar-inverse {
+height: 80px;
+background: black;
+flex-grow: 0;
+font-size: 20px;
+
+}
+
+.navbar-inverse a {
+
+  top: 9px;
+  right: 20px;
+}
+
+.navbar-inverse img {
+
+position: absolute;
+width:90px;
+bottom: -1px;
+box-shadow: red;
+
+
+
+
+}
+
+body {
+font-family: 'Oswald', sans-serif;
+background-image: url("bb.jpg");
+background-size: cover;
+}
+
+h2 {
+
+  color: white;
+}
+h4 {
+
+  text-decoration: none;
+  color: #F25F5C;
+}
+
+p,h1,td, th, .col-md-4 {
+
+  color: #D8CBC7;
+}
+
+.list-group-item.active {
+background-color: black;
+border: black;
+
+}
+
+.list-group-item.active:hover {
+background-color: black;
+
+}
+
+
+.btn-ghost {
+  border: 1px solid #2F2D2E;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  background-image: linear-gradient(to right top, #04080d, #1f2043, #681d62, #b90053, #eb1212); color: white;"
+
+}
+
+
+
+.btn-gradient {
+  border: 1px solid #92140C;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(233,58,110,1) 0%, rgba(228,91,122,1) 35%, rgba(238,114,0,1) 100%);  transition: background 0.3s ease;
+ opacity: 0.8;
+}
+
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 20px;
+  background: #f0134d;
+  transition: background 0.3s ease;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+.btn-ghost:hover {
+  opacity: 2;
+  color: white;
+}
+
+.panel-heading , .panel-body {
+
+
+background-image: url("logb.jpg");
+background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #D8CBC7;
+}
+
+
+.panel-default > .panel-heading {
+  color: #D8CBC7;
+}
+
+
+
+input  {
+  color: #171738;
+  border: none;
+  border-radius: 5%;
+  opacity: 0.8;
+
+}
+
+
+
+.btn-flat:hover {
+  background: #fa163f;
+  color: white;
+  opacity: 1;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#92140C, #F72C25);
+  color: white;
+}
+
+
+
+.style_avatar {
+
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.style_edit-post {
+
+  opacity: 0.8;
+}
+
+
+
+.style_avatar_nav {
+
+position: relative;
+left: 100px;
+border-radius: 50%;
+overflow: hidden;
+top: -1px;
+height: 80px;
+position: fixed;
+display: inline-block;
+
+}
+}
+
+@media (max-width: 123px) { /* Remplacez 123px par la taille de votre choix */
+.navbar-header {
+float: none;
+}
+.navbar-toggle {
+display: block;
+}
+.navbar-collapse {
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+display: none!important;
+}
+.navbar-nav {
+float: none!important;
+margin: 7.5px -15px;
+}
+.navbar-nav>li {
+float: none;
+}
+.navbar-nav>li>a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.navbar-text {
+float: none;
+margin: 15px 0;
+}
+/* cette classe est à ajouter lorsque que vous utilisez une version de Bootstap supérieure ou égale à la 3.1.0 */
+.navbar-collapse.collapse.in {
+display: block!important;
+}
+.collapsing {
+overflow: hidden!important;
+}
+}

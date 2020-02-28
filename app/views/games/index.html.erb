@@ -1,0 +1,86 @@
+<% content_for :tab, :games %>
+
+<% content_for :content do %>
+
+<h1>Manage my games</h1>
+
+
+
+
+<p class="text-right">
+  <a href="<%= new_game_path%>" class="btn btn-ghost">Add Your Favorite Games</a>
+
+</p>
+
+<table class = "table table_striped">
+
+  <thead>
+
+<tr>
+
+  <th>avatar</th>
+  <th>Title</th>
+  <th>Thoughts</th>
+  <th>Release Date</th>
+  <th>Category</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+  <% @games.each do |game| %>
+
+  <tr>
+
+    <td><%= image_tag game.avatar_url %></td>
+    <td><%= game.title %></td>
+    <td><%= game.test %></td>
+    <td><%= game.release_date %></td>
+    <td><%= game.category.name %></td>
+    <td>
+
+
+
+<%= link_to 'Show', game, class: 'btn btn-ghost' %>
+</td>
+<td>
+<%= link_to 'Edit', [:edit,game], class: 'btn btn-gradient' %>
+</td>
+<td>
+<%= link_to 'Delete',game, class: 'btn btn-flat', data: {method: :delete, confirm:'Do you Really Want to Delete your Favorite Game ?'} %>
+
+
+
+    </td>
+</tr>
+
+<% end %>
+</tbody>
+</table>
+<% end %>
+
+<%= render template: 'layouts/profile' %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </thead>
