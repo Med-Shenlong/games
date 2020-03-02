@@ -19,7 +19,7 @@ gem 'rails', '~> 6.0.0'
 gem 'devise'
 gem 'jquery-rails'
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
@@ -65,3 +65,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :development, :test do
+  gem 'pg', '>= 0.18', '< 2.0'
+end
+gem 'pg', '>= 0.18', '< 2.0', group: :production
