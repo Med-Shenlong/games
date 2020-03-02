@@ -8,7 +8,7 @@ ruby '2.6.3'
 gem 'flatpickr'
 
 
-
+gem 'rails_12factor', group: :production
 
 #traitement des images
 

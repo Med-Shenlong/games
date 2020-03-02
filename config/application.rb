@@ -15,18 +15,17 @@ module Games
      name: 'Games'
 
     }
-
+    config.assets.initialize_on_precompile = false
     config.load_defaults 6.0
-
+    config.serve_static_assets = true
 
       config.generators do |g|
-      g.assets false
       g.helper false
       g.test_framework false
       g.jbuilder false
     end
 
-  #config.assets.paths << Rails.root.join('app', 'assets', 'select2')
+
 
 
   end
