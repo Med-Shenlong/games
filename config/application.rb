@@ -15,7 +15,7 @@ module Games
      name: 'Games'
 
     }
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
     config.load_defaults 6.0
     config.serve_static_assets = true
 
