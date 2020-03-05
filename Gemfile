@@ -16,7 +16,6 @@ gem 'mini_magick'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
-gem 'devise'
 gem 'jquery-rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -26,6 +25,8 @@ gem 'puma'
 gem 'sass-rails'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
+gem 'uglifier', '~> 3.0'
+gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -34,7 +35,7 @@ gem 'jbuilder'
  gem 'redis'
 # Use Active Model has_secure_password
 gem 'bcrypt'
-gem 'devise'
+#gem 'devise'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
