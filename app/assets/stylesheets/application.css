@@ -111,7 +111,7 @@ box-shadow: red;
 
 body {
 font-family: 'Oswald', sans-serif;
-background-image: url("bb.jpg");
+
 background-size: cover;
 }
 
@@ -182,7 +182,7 @@ background-color: black;
 
 .panel-heading , .panel-body {
 
-  background-image:url(logb.jpg);
+  background-image:url(https://res.cloudinary.com/dnoyrq2k1/image/upload/v1583424670/logb_poztbh.jpg);
   background-size: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
