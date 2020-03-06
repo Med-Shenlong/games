@@ -25,8 +25,8 @@ gem 'puma'
 gem 'sass-rails'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
-gem 'uglifier', '~> 3.0'
-gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
+gem 'uglifier'
+gem 'coffee-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
