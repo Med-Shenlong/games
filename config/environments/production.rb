@@ -23,7 +23,6 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
 
-
   config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
@@ -118,22 +117,19 @@ Rails.application.configure do
 
 
 #production heroku
-
-config.action_mailer.default_url_options = {host: 'https://for-the-gamers.herokuapp.com/', :protocol => 'https'}
-
-  #Maildev
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-
-    address: 'smtp.gmail.com',
-    port: 587,
-    domain: 'for-the-gamers.herokuapp.com'
-    authentication: => :plain
-    username: => 'jaegereren08@gmail.com',
-    password: => 'juggernaut1987/8815@03'
-
-  }
+config.action_mailer.default_url_options = {:host => 'for-the-gamers.herokuapp.com', :protocol => 'http'}
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.smtp_settings = {
+   :address => "smtp.gmail.com",
+   :port => 587,
+   :domain => 'for-the-gamers.herokuapp.com',
+   :authentication => :plain,
+   :enable_starttls_auto => true,
+   :user_name => 'jaegereren08@gmail.com',
+   :password => 'juggernaut1987/8815@03'
+ }
 
 
 
