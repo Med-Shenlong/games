@@ -117,19 +117,14 @@ Rails.application.configure do
 
 
 #production heroku
-config.action_mailer.default_url_options = {:host => 'for-the-gamers.herokuapp.com', :protocol => 'https'}
-config.action_mailer.raise_delivery_errors = true
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.perform_deliveries = true
-config.action_mailer.smtp_settings = {
-   :address => "smtp.gmail.com",
-   :port => 587,
-   :domain => 'for-the-gamers.herokuapp.com',
-   :authentication => :plain,
-   :enable_starttls_auto => true,
-   :user_name => 'jaegereren08@gmail.com',
-   :password => 'juggernaut1987/8815@03'
- }
+config.action_mailer.delivery_method     = :postmark
+ config.action_mailer.postmark_settings   = { api_key: ENV['c6c4b4b4-a428-4037-8c25-c3901b4d2962'] }
+ config.action_mailer.default_url_options = { host: "for-the-gamers.herokuapp.com/" }
+end
+
+
+
+
 
 
 
