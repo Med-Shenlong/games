@@ -14,6 +14,9 @@ module Games
     config.site = {
      name: 'Games'
 
+     config.action_mailer.delivery_method = :postmark
+     config.action_mailer.postmark_settings = { :api_token => Rails.application.secrets.postmark_api_token }
+
     }
 
     config.load_defaults 6.0
