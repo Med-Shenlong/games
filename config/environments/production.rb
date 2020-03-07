@@ -92,9 +92,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-   config.action_mailer.delivery_method     = :postmark
- config.action_mailer.postmark_settings   = { api_key: ENV['c6c4b4b4-a428-4037-8c25-c3901b4d2962'] }
- config.action_mailer.default_url_options = { host: "for-the-gamers.herokuapp.com" }
+
 end
 
   # Inserts middleware to perform automatic connection switching.
