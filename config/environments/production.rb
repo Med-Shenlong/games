@@ -94,15 +94,15 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-config.action_mailer.default_url_options = {:host => 'https://for-the-gamers.herokuapp.com', :protocol => 'http'}
+config.action_mailer.default_url_options = {:host => 'for-the-gamers.herokuapp.com', :protocol => 'http'}
 config.action_mailer.smtp_settings = {
-   :address => "smtp.gmail.com",
-   :port => 587,
-   :domain => 'for-the-gamers.herokuapp.com',
-   :authentication => :plain,
-   :enable_starttls_auto => true,
-   :user_name => 'jaegereren08@gmail.com',
-   :password => 'root'
+   address: “smtp.gmail.com”,
+   port: 587,
+   domain: “mail.google.com”,
+   user_name: “jaegereren08@gmail.com”,
+   password: “root”,
+   authentication: “plain”,
+   enable_starttls_auto: true
  }
 
 end
