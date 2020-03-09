@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   before_action  :only_signed_in
   add_flash_types :success, :danger
   helper_method :current_user, :user_signed_in?
-  before_filter :set_mailer_settings
 
 
 private
@@ -44,19 +43,4 @@ return @_users if @_users
 @_users = User.find_by_id(session[:auth]['id'])
 
 end
-
-
-def set_mailer_settings
-  setting = MailerSetting.first()
-  ActionMailer::Base.smtp_settings = {
-    :address => setting.smpt_address,
-    :port => setting.smtp_port,
-    :domain => setting.smtp_domain,
-    :authentication => setting.authentication_type,
-    :user_name => setting.smtp_username,
-    :password => setting.smtp_password
- }
- end
-
-
  end
