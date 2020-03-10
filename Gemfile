@@ -7,7 +7,7 @@ ruby '2.6.3'
 
 gem 'flatpickr'
 
-
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 #traitement des images

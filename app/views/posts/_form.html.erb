@@ -24,7 +24,7 @@
     <%= f.file_field :image_file, class: 'form-control' %>
 
     <% unless post.new_record? %>
-    <%= image_tag post.image_url (:thumb)%>
+    <%= image_tag post.image_url(:thumb) %>
 
     <% end %>
 

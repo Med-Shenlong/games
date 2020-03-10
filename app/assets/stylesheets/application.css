@@ -218,6 +218,12 @@ input  {
 }
 
 
+.btn-danger, .btn-success {
+
+
+  border-radius: 40%;
+}
+
 
 .style_avatar {
 

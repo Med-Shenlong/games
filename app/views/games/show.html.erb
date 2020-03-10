@@ -5,26 +5,31 @@
 
 <%= image_tag @game.avatar_url, class: 'img-circle' %>
 
+
 </div>
 
 <div class="col-md-10">
 
 
 <h2> <%= @game.title %></h2>
+<p><%= @game.test %></p>
 <% if user_signed_in? %>
 <% if @game.followedBy?(current_user) %>
 <%= link_to "Unsubscribe",[@game, Subscription], method: :delete, class: 'btn btn-danger' %>
 <% else %>
 <%= link_to "Subscribe", [@game, Subscription], method: :post, class: 'btn btn-success' %>
+
 <% end %>
 <%end %>
-
+<%= link_to "My Games", games_path,  class: 'btn-ghost' %>
 </div>
 
 </div>
 
 
 <div class="row">
+
+
 
 
 <% @game.posts.each do |post| %>
@@ -39,3 +44,4 @@
 <% end %>
 
 </div>
+

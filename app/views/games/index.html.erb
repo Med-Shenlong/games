@@ -36,7 +36,7 @@
 
     <td><%= image_tag game.avatar_url %></td>
     <td><%= game.title %></td>
-    <td><%= game.test %></td>
+    <td><%= truncate game.test, length: 50 %></td>
     <td><%= game.release_date %></td>
     <td><%= game.category.name %></td>
     <td>

@@ -30,7 +30,7 @@
       <tr>
         <td><%= image_tag post.image_url(:thumb)%></td>
         <td><%= post.name %></td>
-        <td><%= post.content %></td>
+        <td><%= truncate post.content, length: 320 %></td>
 
 
 

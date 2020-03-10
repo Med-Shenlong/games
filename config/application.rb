@@ -11,6 +11,8 @@ module Games
     # Initialize configuration defaults for originally generated Rails version.
 
 
+
+
     config.site = {
      name: 'Games'
 
@@ -21,12 +23,12 @@ module Games
     config.load_defaults 6.0
     config.serve_static_assets = true
 
-    #   config.generators do |g|
-    #   g.helper false
-    #   g.assets false
-    #   g.test_framework false
-    #   g.jbuilder false
-    # end
+      config.generators do |g|
+      g.helper false
+      g.assets false
+      g.test_framework false
+      g.jbuilder false
+    end
 
 
 
