@@ -32,7 +32,7 @@ Rails.application.configure do
 
   config.serve_static_assets = true
 
-config.log_level = :debug
+
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
@@ -97,18 +97,15 @@ config.log_level = :debug
 
 config.action_mailer.default_url_options = { :host => 'for-the-gamers.herokuapp.com' }
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
 
-  address: 'smtp.gmail.com',
-  port: 587,
-  domain: 'gmail.com',
-  authentication: :plain,
-  user_name: ENV['GMAIL_USERNAME'],
-  password: ENV['GMAIL_PASSWORD'],
-  }
-
-
+Send_mode: smtp
+Encryption: TLS
+From address: ENV['GMAIL_USERNAME']
+Authentication method: Login.
+Authentication required checked
+Server address: smtp.gmail.com
+Port: 587
+Credentials: ENV['GMAIL_PASSWORD'],
 
 end
 
