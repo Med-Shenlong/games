@@ -9,6 +9,8 @@ gem 'flatpickr'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
+gem 'sendgrid-ruby'
+
 
 #traitement des images
 

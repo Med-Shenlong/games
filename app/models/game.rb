@@ -22,7 +22,7 @@ has_and_belongs_to_many :posts
 def release_date_not_future
 
   if release_date.present? && release_date.future?
-    errors.add(:release_date,'you cannot give your opinion on a game that has not yet been released yet')
+    errors.add(:release_date,'you cannot give your opinion on a game that has not yet been released')
   end
 end
 

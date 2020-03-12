@@ -251,6 +251,12 @@ display: inline-block;
 
 }
 
+.alert {
+   width:30%;
+   text-align: center;
+
+}
+
 
 @media (max-width: 123px) {
 .navbar-header {

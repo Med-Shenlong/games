@@ -2,7 +2,7 @@
 
 <%= link_to game do %>
   <h4 class="list-group-item-heading"><%= game.title %></h4>
-  <p class="list-group-item-text"><%= game.test %></p>
+  <p class="list-group-item-text"><%= truncate game.test, length: 70 %></p>
 <% end %>
 
 </li>

@@ -22,10 +22,10 @@ if @user and @user.authenticate(user_params[:password])
 
 
 session[:auth] = @user.to_session
-redirect_to profil_path, success: 'Successful connection'
+redirect_to profil_path, success: 'Well done! You successfully joined our community.'
 else
 
-  redirect_to new_session_path, danger: 'incorrect credentials'
+  redirect_to new_session_path, danger: 'Oh snap! Change a few things up and try submitting again.'
 
   end
 end
