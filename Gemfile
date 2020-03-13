@@ -11,6 +11,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'sendgrid-ruby'
 
+gem 'cloudinary'
 
 #traitement des images
 
