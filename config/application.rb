@@ -10,7 +10,7 @@ module Games
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
 
-
+  config.assets.initialize_on_precompile = false
 
 
     config.site = {
