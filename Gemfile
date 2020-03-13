@@ -13,6 +13,8 @@ gem 'sendgrid-ruby'
 
 gem 'cloudinary'
 
+gem 'figaro'
+
 #traitement des images
 
 gem 'mini_magick'
