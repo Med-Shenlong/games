@@ -98,14 +98,16 @@ Rails.application.configure do
 config.action_mailer.default_url_options = { :host => 'for-the-gamers.herokuapp.com' }
 
 
-Send_mode: smtp,
-Encryption: TLS,
-address: ENV['GMAIL_USERNAME'],
-Authentication method: Login.
-Authentication required checked,
-address: smtp.gmail.com,
-Port: 587,
-Credentials: ENV['GMAIL_PASSWORD'],
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  address: "mail.google.com",
+  port: 587,
+  authentication: "plain",
+  user_name: ENV["SMTP_USERNAME"],
+  password: ENV['SMTP_PASSWORD'],
+  enable_starttls_auto: false
+}
+config.action_mailer.raise_delivery_errors = true
 
 end
 

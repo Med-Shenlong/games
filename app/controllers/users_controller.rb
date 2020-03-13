@@ -5,6 +5,8 @@ skip_before_action :only_signed_in, only: [:new, :create, :confirm]
 before_action :only_signed_out , only: [:new, :create, :confirm]
 
 
+
+
   def new
 
   @user = User.new
