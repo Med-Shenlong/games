@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <body>
+
+
+<h1>Hello,</h1>
+
+
+
+<p>Thank You <%= @user.username %> for your registration
+
+you can validate your account by clicking on the link<p>
+
+
+<p><%= confirm_user_url(id: @user.id, token: @user.confirmation_token) %><p>
+
+
+
+Greetings
+
+</body>
+</html>
