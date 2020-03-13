@@ -269,4 +269,193 @@ remote:
 remote: Verifying deploy... done.[K
 To https://git.heroku.com/for-the-gamers.git
    47e8cc1..38512f7  master -> master
-[1m[7m%[27m[1m[0m                                                                                    
+[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mh[39m[1m[31mh[1m[31me[0m[39m[1m[31mh[1m[31me[1m[31mr[0m[39m[1m[31mr[1m[31mo[0m[39m[1m[31mo[1m[31mk[0m[39m[0m[32mh[0m[32me[0m[32mr[0m[32mo[0m[32mk[32mu[39m open[?1l>[?2004l
+]2;heroku open]1;heroku[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4ma[24m[24madd [4m.[24m[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4mc[24m[4mc[4mo[24m[24mc[24mommit -m [33m"[39m[33m"[33ms[39m[33ms[33mm[39m[33mm[33mt[39m[33mt[33mp[39m[33mp[33m"[39m[?1l>[?2004l
+]2;git commit -m "smtp"]1;git[master 63454c6] smtp
+ 2 files changed, 248 insertions(+), 15 deletions(-)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4mp[24m[4mp[4mu[24m[24mp[24mush origin master[?1l>[?2004l
+]2;git push origin master]1;gitCounting objects: 6, done.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 5.28 KiB | 5.28 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Med-Shenlong/games.git
+   38512f7..63454c6  master -> master
+[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4mp[24m[4mp[4mu[24m[24mp[24mush heroku u master[?1l>[?2004l
+]2;git push heroku master]1;gitCounting objects: 6, done.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 5.28 KiB | 5.28 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Ruby app detected[K
+remote: -----> Installing bundler 2.0.2[K
+remote: -----> Removing BUNDLED WITH version in the Gemfile.lock[K
+remote: -----> Compiling Ruby/Rails[K
+remote: -----> Using Ruby version: ruby-2.6.3[K
+remote: -----> Installing dependencies using bundler 2.0.2[K
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment[K
+remote:        The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.[K
+remote:        Using rake 13.0.1[K
+remote:        Using concurrent-ruby 1.1.6[K
+remote:        Using i18n 1.8.2[K
+remote:        Using minitest 5.14.0[K
+remote:        Using thread_safe 0.3.6[K
+remote:        Using tzinfo 1.2.6[K
+remote:        Using zeitwerk 2.3.0[K
+remote:        Using activesupport 6.0.2.1[K
+remote:        Using builder 3.2.4[K
+remote:        Using erubi 1.9.0[K
+remote:        Using mini_portile2 2.4.0[K
+remote:        Using nokogiri 1.10.9[K
+remote:        Using rails-dom-testing 2.0.3[K
+remote:        Using crass 1.0.6[K
+remote:        Using loofah 2.4.0[K
+remote:        Using rails-html-sanitizer 1.3.0[K
+remote:        Using actionview 6.0.2.1[K
+remote:        Using rack 2.2.2[K
+remote:        Using rack-test 1.1.0[K
+remote:        Using actionpack 6.0.2.1[K
+remote:        Using nio4r 2.5.2[K
+remote:        Using websocket-extensions 0.1.4[K
+remote:        Using websocket-driver 0.7.1[K
+remote:        Using actioncable 6.0.2.1[K
+remote:        Using globalid 0.4.2[K
+remote:        Using activejob 6.0.2.1[K
+remote:        Using activemodel 6.0.2.1[K
+remote:        Using activerecord 6.0.2.1[K
+remote:        Using mimemagic 0.3.4[K
+remote:        Using marcel 0.3.3[K
+remote:        Using activestorage 6.0.2.1[K
+remote:        Using mini_mime 1.0.2[K
+remote:        Using mail 2.7.1[K
+remote:        Using actionmailbox 6.0.2.1[K
+remote:        Using actionmailer 6.0.2.1[K
+remote:        Using actiontext 6.0.2.1[K
+remote:        Using aws_cf_signer 0.1.3[K
+remote:        Using bcrypt 3.1.13[K
+remote:        Using msgpack 1.3.3[K
+remote:        Using bootsnap 1.4.6[K
+remote:        Using bundler 2.0.2[K
+remote:        Using http-accept 1.7.0[K
+remote:        Using unf_ext 0.0.7.6[K
+remote:        Using unf 0.1.4[K
+remote:        Using domain_name 0.5.20190701[K
+remote:        Using http-cookie 1.0.3[K
+remote:        Using mime-types-data 3.2019.1009[K
+remote:        Using mime-types 3.3.1[K
+remote:        Using netrc 0.11.0[K
+remote:        Using rest-client 2.1.0[K
+remote:        Using cloudinary 1.13.2[K
+remote:        Using coffee-script-source 1.12.2[K
+remote:        Using execjs 2.7.0[K
+remote:        Using coffee-script 2.4.1[K
+remote:        Using method_source 0.9.2[K
+remote:        Using thor 0.20.3[K
+remote:        Using railties 6.0.2.1[K
+remote:        Using coffee-rails 5.0.0[K
+remote:        Using ffi 1.12.2[K
+remote:        Using figaro 1.1.1[K
+remote:        Using flatpickr 4.5.7.0[K
+remote:        Using jbuilder 2.10.0[K
+remote:        Using jquery-rails 4.3.5[K
+remote:        Using mini_magick 4.10.1[K
+remote:        Using pg 1.2.2[K
+remote:        Using puma 4.3.3[K
+remote:        Using rack-proxy 0.6.5[K
+remote:        Using sprockets 4.0.0[K
+remote:        Using sprockets-rails 3.2.1[K
+remote:        Using rails 6.0.2.1[K
+remote:        Using rails_serve_static_assets 0.0.5[K
+remote:        Using rails_stdout_logging 0.0.5[K
+remote:        Using rails_12factor 0.0.3[K
+remote:        Using redis 4.1.3[K
+remote:        Using ruby_http_client 3.4.3[K
+remote:        Using sassc 2.2.1[K
+remote:        Using tilt 2.0.10[K
+remote:        Using sassc-rails 2.1.2[K
+remote:        Using sass-rails 6.0.0[K
+remote:        Using sendgrid-ruby 6.1.1[K
+remote:        Using turbolinks-source 5.2.0[K
+remote:        Using turbolinks 5.2.1[K
+remote:        Using uglifier 4.2.0[K
+remote:        Using webpacker 4.2.2[K
+remote:        Bundle complete! 29 Gemfile dependencies, 84 gems now installed.
+remote:        Gems in the groups development and test were not installed.[K
+remote:        Bundled gems are installed into `./vendor/bundle`[K
+remote:        Bundle completed (0.49s)[K
+remote:        Cleaning up the bundler cache.[K
+remote: -----> Installing node-v10.15.3-linux-x64[K
+remote: -----> Installing yarn-v1.16.0[K
+remote: -----> Detecting rake tasks[K
+remote: -----> Preparing app for Rails asset pipeline[K
+remote:        Running: rake assets:precompile[K
+remote:        DEPRECATION WARNING: Including LoggerSilence is deprecated and will be removed in Rails 6.1. Please use `ActiveSupport::LoggerSilence` instead (called from <top (required)> at /tmp/build_af7cbb5393717be9e4332209d46d710e/config/application.rb:7)[K
+remote:        rake aborted![K
+remote:        SyntaxError: /tmp/build_af7cbb5393717be9e4332209d46d710e/config/environments/production.rb:108: syntax error, unexpected =>[K
+remote:          authentication: => :plain,[K
+remote:                          ^~[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/config/environments/production.rb:109: syntax error, unexpected ',', expecting end-of-input[K
+remote:          user_name: => "GMAIL_ID",[K
+remote:                                  ^[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/zeitwerk-2.3.0/lib/zeitwerk/kernel.rb:23:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in `block in require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:291:in `load_dependency'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/engine.rb:612:in `block (2 levels) in <class:Engine>'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/engine.rb:611:in `each'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/engine.rb:611:in `block in <class:Engine>'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:32:in `instance_exec'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:32:in `run'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:61:in `block in run_initializers'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:50:in `each'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:50:in `tsort_each_child'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/initializable.rb:60:in `run_initializers'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/application.rb:363:in `initialize!'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/config/environment.rb:5:in `<main>'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:23:in `block in require_with_bootsnap_lfi'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require_with_bootsnap_lfi'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.6/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:31:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/zeitwerk-2.3.0/lib/zeitwerk/kernel.rb:23:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in `block in require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:291:in `load_dependency'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/activesupport-6.0.2.1/lib/active_support/dependencies.rb:325:in `require'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/application.rb:339:in `require_environment!'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/railties-6.0.2.1/lib/rails/application.rb:515:in `block in run_tasks_blocks'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'[K
+remote:        /tmp/build_af7cbb5393717be9e4332209d46d710e/vendor/bundle/ruby/2.6.0/gems/rake-13.0.1/exe/rake:27:in `<top (required)>'[K
+remote:        Tasks: TOP => environment[K
+remote:        (See full trace by running task with --trace)[K
+remote: [1m[31m[K
+remote:  ![K
+remote:  !     Precompiling assets failed.[K
+remote:  ![0m[K
+remote:  !     Push rejected, failed to compile Ruby app.[K
+remote: 
+remote:  !     Push failed[K
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to for-the-gamers.[K
+remote: 
+To https://git.heroku.com/for-the-gamers.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/for-the-gamers.git'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;31m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[7mheroku config:set GMAIL_ID=[27m[27D[27m[32mh[27m[32me[27m[32mr[27m[32mo[27m[32mk[27m[32mu[39m[27m [27mc[27mo[27mn[27mf[27mi[27mg[27m:[27ms[27me[27mt[27m [27mG[27mM[27mA[27mI[27mL[27m_[27mI[27mD[27m=[27D[39mh[39me[39mr[39mo[39mk[39mu[21C[7mjaegereren08@gmail.com[27m[49D[32mh[32me[32mr[32mo[32mk[32mu[39m[21C[27mj[27ma[27me[27mg[27me[27mr[27me[27mr[27me[27mn[27m0[27m8[27m@[27mg[27mm[27ma[27mi[27ml[27m.[27mc[27mo[27mm[?1l>[?2004l
+]2;heroku config:set GMAIL_ID=jaegereren08@gmail.com]1;heroku[G[2K[?25lSetting [32mGMAIL_ID[39m and restarting [38;5;104m⬢ for-the-gamers[0m... [38;5;104m⣾[0m 
+[1A[52C[38;5;104m⣽[0m[1B[G[2K[1A[52C[38;5;104m⣻[0m[1B[G[2K[1A[52C[38;5;104m⢿[0m[1B[G[2K[1A[52C[38;5;104m⡿[0m[1B[G[2K[1A[52C[38;5;104m⣟[0m[1B[G[2K[1A[52C[38;5;104m⣯[0m[1B[G[2K[1A[52C[38;5;104m⣷[0m[1B[G[2K[1A[52C[38;5;104m⣾[0m[1B[G[2K[1A[52C[38;5;104m⣽[0m[1B[G[2K[1A[52C[38;5;104m⣻[0m[1B[G[2K[1A[52C[38;5;104m⢿[0m[1B[G[2K[1A[52C[38;5;104m⡿[0m[1B[G[2K[1A[52C[38;5;104m⣟[0m[1B[G[2K[1A[52C[38;5;104m⣯[0m[1B[G[2K[1A[JSetting [32mGMAIL_ID[39m and restarting [38;5;104m⬢ for-the-gamers[0m... done, [34m[1mv73[22m[39m
+[?25h[32mGMAIL_ID[39m: jaegereren08@gmail.com
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m[J[01;32m➜  [36mgames[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[7mheroku config:set GMAIL_PASSWORD=[27m[33D[27m[32mh[27m[32me[27m[32mr[27m[32mo[27m[32mk[27m[32mu[39m[27m [27mc[27mo[27mn[27mf[27mi[27mg[27m:[27ms[27me[27mt[27m [27mG[27mM[27mA[27mI[27mL[27m_[27mP[27mA[27mS[27mS[27mW[27mO[27mR[27mD[27m=[33D[39mh[39me[39mr[39mo[39mk[39mu[27C[7mjuggernaut1988/8815@03[27m[55D[32mh[32me[32mr[32mo[32mk[32mu[39m[27C[27mj[27mu[27mg[27mg[27me[27mr[27mn[27ma[27mu[27mt[27m1[27m9[27m8[27m8[27m/[27m8[27m8[27m1[27m5[27m@[27m0[27m3[?1l>[?2004l
+]2;heroku config:set GMAIL_PASSWORD=juggernaut1988/8815@03]1;heroku[G[2K[?25lSetting [32mGMAIL_PASSWORD[39m and restarting [38;5;104m⬢ for-the-gamers[0m... [38;5;104m⣾[0m 
+[1A[58C[38;5;104m⣽[0m[1B[G[2K[1A[58C[38;5;104m⣻[0m[1B[G[2K[1A[58C[38;5;104m⢿[0m[1B[G[2K[1A[58C[38;5;104m⡿[0m[1B[G[2K[1A[58C[38;5;104m⣟[0m[1B[G[2K[1A[58C[38;5;104m⣯[0m[1B[G[2K[1A[58C[38;5;104m⣷[0m[1B[G[2K[1A[58C[38;5;104m⣾[0m[1B[G[2K[1A[58C[38;5;104m⣽[0m[1B[G[2K[1A[58C[38;5;104m⣻[0m[1B[G[2K[1A[58C[38;5;104m⢿[0m[1B[G[2K[1A[58C[38;5;104m⡿[0m[1B[G[2K[1A[58C[38;5;104m⣟[0m[1B[G[2K[1A[JSetting [32mGMAIL_PASSWORD[39m and restarting [38;5;104m⬢ for-the-gamers[0m... done, [34m[1mv74[22m[39m
+[?25h[32mGMAIL_PASSWORD[39m: juggernaut1988/8815@03
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                 ]2;med@med-VirtualBox: ~/projects/games]1;..rojects/games[0m[27m[24m
