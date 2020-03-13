@@ -1,0 +1,15 @@
+Hello,
+
+
+
+Thank You <%= @user.username %> for your registration
+
+you can validate your account by clicking on the link
+
+
+<%= confirm_user_url(id: @user.id, token: @user.confirmation_token) %>
+
+
+
+Greetings
+
