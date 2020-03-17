@@ -106,9 +106,11 @@ config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
   port: 587,
   authentication: "plain",
+  domain: "gmail.com",
   user_name: "GMAIL_ID",
   password: "SMTP_PASSWORD",
-  enable_starttls_auto: true
+  enable_starttls_auto: true,
+  openssl_verify_mode: "none"
 }
 
 
