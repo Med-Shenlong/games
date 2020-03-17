@@ -113,7 +113,7 @@ config.action_mailer.default :charset => "utf-8"
    config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
   port: 587,
-  domain: "gmail.com",
+  domain: "https://for-the-gamers.herokuapp.com",
   authentication: :plain,
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
