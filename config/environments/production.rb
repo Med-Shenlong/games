@@ -100,7 +100,7 @@ config.logger.level = Logger::DEBUG
 
 
 
-config.action_mailer.default_url_options = { host: 'https://for-the-gamers.herokuapp.com' }
+config.action_mailer.default_url_options = { host: 'https://for-the-gamers.herokuapp.com', protocol: 'http' }
 
 
   config.action_mailer.delivery_method = :smtp
