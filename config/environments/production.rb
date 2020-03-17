@@ -104,13 +104,14 @@ config.action_mailer.default_url_options = { host: 'https://for-the-gamers.herok
 
 
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
    config.action_mailer.smtp_settings = {
      address: 'smtp.mail.com',
      port: 587,
      domain: 'https://for-the-gamers.herokuapp.com',
      user_name: ENV['GMAIL_USERNAME'],
      password: ENV['GMAIL_PASSWORD'],
-     authentication: 'plain',
+     authentication: :plain,
      enable_starttls_auto: true }
 
 
